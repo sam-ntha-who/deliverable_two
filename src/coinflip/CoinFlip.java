@@ -45,14 +45,14 @@ public class CoinFlip {
         	// results
         if (headsOrTailsGuess.contains("heads")) { 
 	    	 int correctCount = headsCount;
-	    	 double x = (((double)(headsCount * 100)/ numberOfFlips));
+	    	 double x = (((double)(correctCount * 100)/ numberOfFlips));
 	    // make it round!
 	    	 int percentage = (int) Math.round(x);
 	    	 System.out.println("Your guess, heads, came up " + correctCount + " time(s)"); 
 	    	 System.out.println("That's " + percentage + "%");    	 
 	     } else { 
 	    	 int correctCount = tailsCount;
-	    	 double x = (((double)(tailsCount * 100)/ numberOfFlips));
+	    	 double x = (((double)(correctCount * 100)/ numberOfFlips));
 	    // make it round!
 	    	 int percentage = (int) Math.round(x);
 	    	 System.out.println("Your guess, tails, came up " + correctCount + " time(s)");
